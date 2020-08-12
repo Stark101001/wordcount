@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Homepage</title>
+    <style>
+        body{
+    color: red;
+    text-transform: capitalize;
+}
+        a{
+            border: green solid 2px;
+            background-color: hotpink;
+            font-size: 30px;
+            text-decoration: none;
+            transition: 0.6s ease;
+        }
+        a:hover{
+            background-color: grey;
+            color: white;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word count Websites</h1>
+
+    <form action="{% url 'count' %}">
+        <textarea name="fulltextarea" cols="50" rows="10"></textarea> <br> <br>
+        <input type="submit" value="Count">
+    </form>
+    <br> <br>
+    <a href="{% url 'about_page' %}">About</a>
+    
+</body>
+</html>

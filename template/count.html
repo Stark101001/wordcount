@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a{
+            border: green solid 2px;
+            background-color: hotpink;
+            font-size: 30px;
+            text-decoration: none;
+            transition: 0.6s ease;
+        }
+        a:hover{
+            background-color: grey;
+            color: white;
+            cursor:pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blue;">{{ fulltext }}</h1>
+<h2>word counted is : {{ words }}</h2>
+
+
+<a href="{% url 'about_page' %}">About</a>
+
+<a href="{% url 'homepage' %}">Homepage</a>
+
+</body>
+</html>
